@@ -1,0 +1,106 @@
+<!<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" ></script>    
+</head>
+<body>
+<div id="main">
+    <h1 id="title">Coding Preference Survey</h1>
+    <form id="survey-form">
+        <div>
+            <p id="description">
+                    A survey on programmers and their preferences.
+            </p>                    
+        </div>
+        <div class="survey-row">
+            <div class="rowLabel">
+                <label id="name-label">* Name</label>
+            </div>
+            <div class="rowTextBox">
+                <input type="text" name="name" id="name" class="input-field" placeholder="Enter your name/handle" required>
+            </div>
+        </div>
+        <div class="survey-row">
+            <div class="rowLabel">
+                <label id="email-label">* Email</label>
+            </div>
+            <div class="rowTextBox">
+                <input type="email" name="email" id="email" class="input-field" placeholder="Email" required>
+            </div>
+        </div>           
+        <div class="survey-row">
+            <div class="rowLabel">
+                <label id="number-label">* Age</label>
+            </div>
+            <div class="rowTextBox">
+                <input type="number" name="age" id="number" class="input-field" placeholder="Age" min="1" max="100" required>
+            </div>
+        </div>                                    
+        <div class="survey-row">
+            <div class="rowLabel">
+                <label id="level-label">* Which option best describes you?</label>
+            </div>
+            <div class="rowTextBox">
+                <select id="dropdown">
+                    <option value="amateur">Amateur Anne</option>
+                    <option value="average">Average Joe</option>
+                    <option value="famous">Famous Bill</option>                        
+                    <option value="successful">Successful Ninja Guru</option>                        
+                    </select>
+            </div>
+        </div>
+        <div class="survey-row">
+            <div class="rowLabel">
+                <label id="survey-opinion">* How likely are you to take another survey?<br>(This survey question was inspired by GDP regulations)</label>
+            </div>
+            <div class="rowTextBox">
+                <input type="radio" name="opinion" value="yes">Yes<br>
+                <input type="radio" name="opinion" value="yes-another">Yes I'd love to do another<br>
+                <input type="radio" name="opinion" value="yes-but-not-right-now">Yes, but not right now
+            </div>
+        </div>
+        <div class="survey-row">
+            <div class="rowLabel">
+                <label id="programming-language-label">* Which languages are you fluent in? <br>(check all that apply)</label>
+            </div>
+            <div class="rowTextBox">
+                <input type="checkbox" name="language" value="c-c++"> C/C++<br>
+                <input type="checkbox" name="language" value="java" > Java<br>
+                <input type="checkbox" name="language" value="javascript"> Javascript<br>
+                <input type="checkbox" name="language" value="c#" > C#<br>
+                <input type="checkbox" name="language" value="php"> PHP<br>
+                <input type="checkbox" name="language" value="perl" > Perl<br>
+                <input type="checkbox" name="language" value="ruby"> Ruby<br>
+                <input type="checkbox" name="language" value="go"> Go<br>                                                            
+                <input type="checkbox" name="language" value="haskell" > Haskell<br>
+                <input type="checkbox" name="language" value="shakespeare"> <a href="http://shakespearelang.sourceforge.net/">Shakespeare</a><br>
+                <input type="checkbox" name="language" value="whitespace"> <a href="https://en.wikipedia.org/wiki/Whitespace_(programming_language)">Whitespace</a><br> 
+                <input type="checkbox" name="language" value="velato"> <a href="http://velato.net/">Velato</a><br>                                                            
+                <input type="checkbox" name="language" value="parseltongue"> Parseltongue<br>                                                                               
+                <input type="checkbox" name="language" value="simlish"> <a href="https://en.wikipedia.org/wiki/Simlish">Simlish</a><br>                                                                               
+                <input type="checkbox" name="language" value="klingon"> Klingon<br>                                                                               
+                <input type="checkbox" name="language" value="elvish"> Elvish<br>                                                                               
+                <input type="checkbox" name="language" value="minionese"> Minionese<br>                                                                               
+                <input type="checkbox" name="language" value="dothraki"> Dothraki                                                                               
+            </div>
+        </div>
+        <div class="survey-row">
+            <div class="rowLabel">
+                <label id="comments-label"> Any Comments? Suggestions?<br>Secrets of mass conclusions?</label>
+            </div>
+            <div class="rowTextBox">
+                <textarea id="comment" name="comment" placeholder="Enter your secrets here..."></textarea>
+            </div>
+        </div>
+        <div>
+            <input id="submit" type="submit" value="Submit">
+        </div>                                                                                                
+    </form>
+</div>    
+</body>
+</html>

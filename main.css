@@ -1,0 +1,116 @@
+/* COLOR LEGEND
+
+Dark Grey   : #c9c9c9
+Light Grey  : #e3e3e3
+Light Blue  : #9ad3de
+Dark BLue   : #89bdd3
+
+from: https://www.awwwards.com/trendy-web-color-palettes-and-material-design-color-schemes-tools.html
+*/
+
+body{
+    background-color: #89bdd3;    
+    margin: 0px auto;
+}
+
+/* 
+    make links look like a boss
+*/
+a{
+    background-color: #e3e3e3;
+    box-shadow: 0 5px 0 #c9c9c9;    
+    text-decoration: none;
+    color: white;
+    padding: 2px 6px 2px 6px;
+}
+
+#main{
+    margin: 0px auto 0px auto;
+    min-width: 320px;
+    height:100%;
+}
+
+#title{
+    margin: 0px auto 0px auto;
+    padding: 20px 0px 10px 0px;
+    text-align: center;
+    position: relative;
+    color: white;
+    background: #9ad3de;
+}
+
+p {
+    margin: 0px;
+    padding: 0px;
+}
+
+#description{
+    margin: 10px auto 20px auto;
+    text-align: center;    
+}
+
+#survey-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;    
+    background: white;        
+}
+
+.survey-row {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    /* width: 100%; */
+    justify-content: flex-start;
+    /* margin: 12px 20px 0px auto; */
+    margin-bottom: 12px;
+}
+
+.rowLabel{
+    width: 50%;
+    text-align: right;
+    margin: 0px 10px 0px 0px;
+    position: relative;
+}
+
+.rowTextBox{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+input[type='checkbox']{
+    margin-bottom: 15px;
+}
+
+#submit{
+    margin: 20px auto 20px auto;
+    text-align: center;    
+}
+
+#comment{
+    min-width: 150px;
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    #main{
+        width: 80%;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    #main{
+        min-width: 600px;
+        width: 80%;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    #main{
+        min-width: 800px;
+        width: 40%;
+    }
+}
